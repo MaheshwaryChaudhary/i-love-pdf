@@ -1,0 +1,7 @@
+{
+  "name": "SignFlow PDF Studio",
+  "description": "A comprehensive suite of PDF tools for merging, splitting, compressing, and intelligent document analysis powered by Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
