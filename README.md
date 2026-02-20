@@ -1,20 +1,99 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# SignFlow PDF Studio
+
+**The Ultimate Document Intelligence Suite.** *Harnessing Google's Gemini AI to transform how you interact with PDFs and Images.*
+
+[![React Version](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?logo=vite)](https://vitejs.dev/)
+[![Gemini AI](https://img.shields.io/badge/AI-Gemini_1.5_Flash-8E75FF?logo=google-gemini)](https://aistudio.google.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](#)
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 🚀 Overview
+SignFlow is a high-performance, developer-centric web application designed to bridge the gap between static documents and intelligent data. With over **40+ specialized tools**, it serves as a central hub for document manipulation, image editing, and AI-powered content extraction.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1XaiOHDwiHhhM5l5eDtQ8aEmZswFMJ3GQ
+### 🧠 The Gemini Advantage
+Unlike standard PDF editors, SignFlow integrates the **Gemini 1.5 Flash** model to provide:
+* **Semantic Search:** Ask questions *to* your document rather than searching for keywords.
+* **Automated Summarization:** Convert 50-page reports into 5-point executive summaries.
+* **Data Extraction:** Turn scanned invoices into structured JSON data in seconds.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## ✨ Key Features
 
+### 📄 PDF Power Tools
+* **Organize:** Merge, Split, Remove, and Extract pages with a drag-and-drop interface.
+* **Convert:** Bidirectional conversion for Word, Excel, PPT, and JPG.
+* **Optimize:** Intelligent compression that maintains text clarity while reducing file size.
+* **Security:** Password protection and PDF repair for corrupted files.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 🖼️ Professional Image Lab
+* **AI Upscaling:** Enhance low-resolution images using neural networks.
+* **Background Removal:** One-click isolation of subjects for e-commerce and design.
+* **Bulk Processing:** Resize, rotate, and watermark hundreds of images simultaneously.
+
+### 🛠️ Developer Ecosystem
+* **Native SDK:** Integrate our document processing logic directly into your React/TypeScript apps.
+* **API Dashboard:** Manage API keys, monitor usage, and set rate limits for enterprise-scale operations.
+
+---
+
+## 📂 Project Architecture
+The project is structured for high modularity and easy scaling:
+
+| Directory | Purpose |
+| :--- | :--- |
+| `src/components` | Atomic UI elements (Modals, Toolcards, Auth). |
+| `src/constants.tsx` | The central registry for all 40+ tool definitions and metadata. |
+| `src/types` | Strict TypeScript definitions for ToolCategories and API responses. |
+| `public/` | Asset storage for high-res icons and static branding. |
+
+---
+
+## 🛠️ Tech Stack & Setup
+
+### Requirements
+* **Node.js:** v18.0 or higher
+* **Package Manager:** npm or yarn
+* **API Access:** A valid Google AI Studio API Key
+
+### Installation & Deployment
+1.  **Clone & Install:**
+    ```bash
+    git clone <your-repo-url>
+    cd signflow-pdf-studio
+    npm install
+    ```
+
+2.  **Environment Configuration:**
+    Create a `.env.local` file in the root directory:
+    ```env
+    VITE_GEMINI_API_KEY=your_key_here
+    VITE_APP_ENV=development
+    ```
+
+3.  **Development Mode:**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 🛡️ Security & Trust
+We take a **Zero-Knowledge** approach to document handling:
+* **Ephemeral Processing:** Files are processed in-memory or on secure temporary nodes and wiped immediately after.
+* **Client-Side Priority:** Whenever possible, processing happens directly in your browser to ensure data never leaves your machine.
+* **AES-256 Encryption:** All data in transit is protected by industry-standard encryption.
+
+---
+
+<div align="center">
+
+Built with ❤️ by the **SignFlow Team**
+
+© 2026 SIGNFLOW CORE. ALL RIGHTS RESERVED.
+
+</div>
